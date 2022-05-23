@@ -1,0 +1,63 @@
+body {
+  background: radial-gradient(circle at 0%, #89B5AF, #DED9C4, #96C7C1);
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  border: 2px transparent solid;
+  text-align: center;
+  margin: auto 35%;
+}
+
+.buttons {
+  margin: 2% 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (6rem)[4];
+      grid-template-columns: repeat(4, 6rem);
+  -ms-grid-rows: minmax(5rem, auto) (4rem)[5];
+      grid-template-rows: minmax(5rem, auto) repeat(5, 4rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  font-size: 1em;
+}
+
+#name {
+  width: 95%;
+  font-size: 2em;
+  height: 80%;
+  outline: none;
+}
+
+.buttons > input[type=button] {
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.buttons > input[type=button]:hover {
+  background-color: rgba(20, 20, 20, 0.26);
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.buttons > input[type=submit] {
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(214, 181, 233, 0.75);
+}
+
+.buttons > input[type=submit]:hover {
+  background-color: rgba(214, 181, 233, 0.95);
+}
+/*# sourceMappingURL=main.css.map */
